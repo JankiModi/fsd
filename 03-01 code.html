@@ -1,0 +1,59 @@
+
+<!-- Write html css and bootstrap program to take 4 section using div tag. 
+Take width of all div are 20%.
+1) First div has text related components like paragraph,abbr & pre tag.
+2) Second div has a table having 3 rows. First row is lowercase, second row is uppercase & third row is capitalized.
+3) Third div has simple texts in justified manners.
+4) Fourth div has a blockquote. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 20%;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" 
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container p-3 m-5 bg-success">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Quia corporis harum autem aspernatur id et recusandae quasi. Delectus, assumenda placeat!</p>
+        <abbr title="Generally asked questions">FAQs</abbr>
+        <br>
+        <pre>hdehod</pre>
+    </div>
+    <div class="container text-white bg-dark p-3 m-5">
+        <table border="2px solid red" width="200px" heigth="200px">
+            <tr class="text-lowercase">
+                <td> A</td>
+                <td>B</td>
+            </tr>
+            <tr class="text-uppercase">
+                <td>c </td>
+                <td>d </td>
+            </tr>
+            <tr class="">
+                <td>e</td>
+                <td>f</td>
+            </tr>
+        </table>
+    </div>
+    
+    <div class="container p-3 m-5 bg-info">
+        <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, labore.</p>
+    </div>
+    
+    <div class="container p-3 m-5 bg-warning text-danger">
+        <blockquote class="blockquote">
+            <p>This is demo</p>
+            <footer class="blockquote-footer">Author name</footer>
+        </blockquote>
+    </div>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!-- Write a script to create 4 sections having table. Create 3 cols & 2 rows. Enter random data. 
+That data should have font-size in rem unit. Shrink the table width to observe the responsive img of all 4 tables
+should be displayed vertically on small devices(sm) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" 
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <style>
+        @media screen and(max-width:200px)
+        {
+            div{
+                width: 100%;
+            }
+        }
+        div{
+            width: 100px;
+            display: inline-block;
+            position: relative;
+        }
+       
+        
+    </style>
+</head>
+<body>
+    <div >
+        <table class="table table-info table-sm table-bordered" style="font-size: 1.5rem;">
+            <tr>
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+            </tr>
+            <tr>
+                <td>D</td>
+                <td>E</td>
+                <td>F</td>
+            </tr>
+        </table>
+    </div>
+    <div >
+        <table class="table table-success table-sm table-bordered" style="font-size: 1.5rem;">
+            <tr>
+                <td>G</td>
+                <td>H</td>
+                <td>I</td>
+            </tr>
+            <tr>
+                <td>J</td>
+                <td>K</td>
+                <td>L</td>
+            </tr>
+        </table>
+    </div>
+    <div >
+        <table class="table table-warning table-sm table-bordered" style="font-size: 1.5rem;">
+            <tr>
+                <td>M</td>
+                <td>N</td>
+                <td>O</td>
+            </tr>
+            <tr>
+                <td>P</td>
+                <td>Q</td>
+                <td>R</td>
+            </tr>
+        </table>
+    </div>
+    <div >
+        <table class="table table-danger table-sm table-bordered" style="font-size: 1.5rem;">
+            <tr>
+                <td>S</td>
+                <td>T</td>
+                <td>U</td>
+            </tr>
+            <tr>
+                <td>V</td>
+                <td>W</td>
+                <td>X</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
