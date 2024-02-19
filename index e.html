@@ -1,0 +1,19 @@
+<!-- wajs that use a function to calculate how many days are left in your birthday -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        d = new Date('2024-06-24')
+        c= new Date()
+        btime = d.getTime()
+        ctime = c.getTime()
+        diff = ((btime - ctime)/(24*60*60*1000))
+        document.write(Math.round(diff))
+    </script>
+</body>                              
+</html>

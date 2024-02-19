@@ -1,0 +1,26 @@
+<!-- wajs to assign one array of 5 elements and find 2nd largest number from array without performing sorting -->
+<!DOCTYPE html>
+<html lang="en">  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var arr = [-1,-6,-676,-57,-87,-5,-66,-878,-678,-6544];
+        var arr = [348,765,43,6,879,7,354]
+        var max1=arr[0]
+        var max2=-Infinity
+        for(i=0;i<arr.length;i++) {
+            if(arr[i]>max1){
+                max2 = max1
+                max1 = arr[i]
+            }else if(arr[i] < max1 && arr[i]>max2) {
+                max2 = arr[i]
+            }
+        }
+        document.write(max2)
+    </script>
+</body>
+</html>

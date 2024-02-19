@@ -1,0 +1,20 @@
+<!-- wajs that finds poaition of first occurence of vowel a, last occurence of a in given word and returns string between them -->
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var s = prompt("Enter word : ",'Here')
+        fir = s.indexOf('a')
+        las = s.lastIndexOf('a')
+        document.write('First occurence : ',fir,'<br>')
+        document.write('Last occurence : ',las,'<br>')
+        document.write(s.substring(fir+1,las),'<br>')
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function fun()
+        {
+            var pat=/abc/;
+            var u=(document.getElementById("id").value);
+            if(pat.test(u))
+            {
+                alert("pattern matched")
+            }
+        }
+    </script>
+    <input type="text" id="id">
+    <button type="submit" onclick="fun()"> Submit</button>
+</body>
+</html>
+
+<!--
+^ string must start with 
+* zero or more occurence 
++ one or more occurence 
+$ matches with end of input 
+\d find a digit 
+\w find a word occurence 
+\W find a non word occurence
+
+-->

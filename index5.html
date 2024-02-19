@@ -1,0 +1,33 @@
+<!-- WAJS that handles followig mouse events. add nesscary elements
+1. If mouse is over heading then heading should turn yellow.if mouse goes out of heading, it should turn black
+2. If findtime button is clicked then show date adnd time information
+3. If button named red is clicked then bgcolor should change to red and if green button is clicked then bgcolor should change green for entire -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function time(obj) {
+            var d1 = new Date();
+            obj.innerHTML = d1
+        }
+        function bodyc(){
+            a = document.getElementById('b1')
+            a.style.backgroundColor = 'green'
+        }
+    </script>
+    <style>
+        h1{
+            color: red;
+        }
+    </style>
+</head>
+<body id="b1">
+    <h1 onmouseover="this.style.backgroundColor='yellow'" onmouseout="this.style.backgroundColor='black'">Heading</h1>
+    <button onclick="time(this)" >TIME</button>
+    <button onclick="this.style.backgroundColor='red'">RED</button>
+    <button onclick="bodyc()">GREEN</button>
+</body>
+</html>

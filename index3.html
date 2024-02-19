@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function diffdate(d1,d2) {
+            one_day = 24*3600*1000;
+            ms1 = d1.getTime();
+            ms2 = d2.getTime();
+            diff = Math.abs(d1-d2)
+            return(Math.round(diff/one_day))
+        }
+    </script>
+</head>
+<body>
+    <script>
+        var d1 = new Date();
+        var d2 = new Date();
+        d1.setMonth(5);
+        d1.setDate(13)
+        document.write(diffdate(d1,d2))
+    </script>
+</body>
+</html>

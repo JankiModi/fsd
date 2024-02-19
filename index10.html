@@ -1,0 +1,38 @@
+<!-- validate username and password staisfy followin condition
+1. length of password must be between 6-12 char
+2. username must not start with underscore, @, or any number
+3. Both must not be blank
+4. Form must not submit in invalid situation-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fun() {
+
+            // EMAIL REGEX
+            pat_e = /^\w+([\.-]?\w+)*@\w+([\.-]?\w{2,3})(\.\w{2,3})$/
+            pat1=/^_|^@|^[0-9]/;
+            var user = document.getElementById('id1').value
+            var pass = document.getElementById('id2').value
+            if(pass.length<6 || pass.length>12 || pass.length!=0 || user.length!=0) {
+                alert('Length must be between 6-12')
+                return false
+            }
+            if(pat1.test(user)){
+                alert('Problem')
+                return false
+            } 
+        }
+    </script>
+</head>
+<body>
+    <form action="#" onsubmit="return fun()">
+        Username<input type="text"  id="id1">
+        Password<input type="password"  id="id2">
+        <input type="submit">
+    </form>       
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!-- wajs to assign joining date of 3 employees and thier names to determine who should be promoted to next position accordingly to experience -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var d1 = new Date();
+        var d2 = new Date();
+        var d3 = new Date();
+        d1.setDate(10)
+        d2.setDate(20)
+        d3.setDate(25)
+        d1.setMonth(2)
+        d2.setMonth(4)
+        d3.setMonth(6)
+        d1.setFullYear(2004)
+        d2.setFullYear(2000)
+        d3.setFullYear(1)
+        m1 = d1.getTime()
+        m2 = d2.getTime()
+        m3 = d3.getTime()
+        if(m1<m2 && m1<m3) {
+            document.write("Employee 1")
+        }else if(m2<m1 && m2<m3) {
+            document.write("Employee 2")
+        }else {
+            document.write("Employee 3")
+        }
+    </script>
+</body>
+</html>
